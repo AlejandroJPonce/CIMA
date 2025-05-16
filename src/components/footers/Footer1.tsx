@@ -6,7 +6,7 @@ import { Twitter } from "@/components/media/twitter";
 export function Footer1() {
   return (
     <footer
-      className="w-full min-h-[600px] md:min-h-[690px] flex items-center justify-center"
+      className="w-full min-h-[600px] md:min-h-[690px] 2xl:min-h-[890px] flex items-center justify-center"
       style={{
         backgroundImage: "url('/footerImage.png')",
         backgroundSize: "cover",
@@ -15,10 +15,10 @@ export function Footer1() {
         backgroundClip: "content-box",
       }}
     >
-      <div className="flex flex-row items-start mt-70 md:mt-115 border-blue justify-between w-screen h-auto md:px-15">
-        <div className="w-full md:w-[70%] h-[100%] flex flex-col items-start pl-4 justify-center min-w-[200px]">
+      <div className="flex flex-row items-start mt-70 md:mt-115 2xl:mt-150 border-blue justify-between w-screen h-auto md:px-15">
+        <div className="w-full md:w-[70%] h-[100%] flex flex-col items-start pl-4 2xl:pl-10 justify-center min-w-[200px]">
           <Image
-            className="w-20 h-20 scale-200 md:scale-350 object-contain ml-4 md:ml-12"
+            className="w-20 h-20 scale-200 md:scale-350 object-contain ml-4 md:ml-12 "
             src={"/logo2.png"}
             width={100}
             height={100}

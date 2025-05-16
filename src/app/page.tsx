@@ -7,7 +7,7 @@ import { Grid2 } from "@/components/body/grids/Grid2";
 import { Footer1 } from "@/components/footers/Footer1";
 import { grid1Info, grid2Info, grid3Info, grid4Info } from "@/constants/GridsInfo";
 import { ContactUs } from "@/components/body/forms/ContactUs";
-import { profiles } from "@/constants/Profiles";
+// import { profiles } from "@/constants/Profiles";
 
 export default function Home() {
   return (
@@ -35,7 +35,7 @@ export default function Home() {
         image={grid4Info.image}
       />
 
-      <Carrousel2 data={profiles}/>
+      {/* <Carrousel2 data={profiles}/> */}
       <ContactUs />
 
       <Footer1 />

@@ -58,11 +58,11 @@ export function Navbar1() {
             } w-full md:block md:w-auto md:mr-5 bg-(--primary-purple)`}
             id="navbar-1"
           >
-            <ul className="font-medium flex flex-col items-center justify-center p-4 md:p-0 md:flex-row md:space-x-12 rtl:space-x-reverse md:mt-0 md:border-0 ">
+            <ul className="font-medium flex flex-col items-center justify-center p-4 md:p-0 md:flex-row md:space-x-15 rtl:space-x-reverse md:mt-0 md:border-0 ">
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:text-(--primary-orange) md:p-0 dark:text-white md:dark:text-(--primary-orange)"
+                  className="block py-2 px-3 md:text-[17px] text-white rounded-sm md:bg-transparent md:text-(--primary-orange) md:p-0 dark:text-white md:dark:text-(--primary-orange)"
                   aria-current="page"
                 >
                   Home
@@ -71,7 +71,7 @@ export function Navbar1() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   About
                 </a>
@@ -79,7 +79,7 @@ export function Navbar1() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Services
                 </a>
@@ -87,7 +87,7 @@ export function Navbar1() {
               <li>
                 <a
                   href="#"
-                  className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
                   Pricing
                 </a>
@@ -95,7 +95,7 @@ export function Navbar1() {
               <li className="mt-2">
                 <button
                   type="button"
-                  className="text-white bg-(--primary-orange) hover:bg-purple-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-purple-800 hover:cursor-pointer"
+                  className="text-white bg-(--primary-orange) hover:bg-purple-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm md:text-[18px] px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-purple-800 hover:cursor-pointer"
                 >
                   Contact Us
                 </button>

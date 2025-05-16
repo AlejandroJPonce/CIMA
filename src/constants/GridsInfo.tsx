@@ -1,6 +1,6 @@
 export const grid1Info = {
   name: (
-    <p>
+    <p className="font-semibold">
       Diseño Grafico,{" "}
       <span className="text-(--primary-orange)">Identidad Visual</span> con
       Propósito
@@ -21,7 +21,7 @@ export const grid1Info = {
 
 export const grid2Info = {
   name: (
-    <p>
+    <p className="font-semibold">
       Desarrollo Web,{" "}
       <span className="text-(--primary-orange)">Experiencias Digitales</span>{" "}
       que Conectan
@@ -41,7 +41,7 @@ export const grid2Info = {
 };
 export const grid3Info = {
   name: (
-    <p>
+    <p className="font-semibold">
       Animación,{" "}
       <span className="text-(--primary-orange)">Ideas en movimiento</span> que
       comunican
@@ -60,7 +60,7 @@ export const grid3Info = {
 
 export const grid4Info = {
   name: (
-    <p>
+    <p className="font-semibold">
       Diseño de Espacios,{" "}
       <span className="text-(--primary-orange)">Interiorismo Estratégico</span>{" "}
       que Eleva tu Marca

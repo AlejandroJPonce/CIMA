@@ -17,7 +17,7 @@ export const carousel1 = [
     id: '2',
     title: 'Tecnología al Servicio de tu Marca',
     description: 'Desarrollo de sitios web, aplicaciones móviles y sistemas con bases de datos. Soluciones funcionales, seguras y modernas.',
-    action: 'Conocé Más',
+    action: 'Conoce Más',
     img_ref: '/color_1_bg.jpeg',
   },
   {  

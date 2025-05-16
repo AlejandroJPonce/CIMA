@@ -29,9 +29,9 @@ export function Carrousel1() {
       defaultPosition: 0,
       interval: 7000,
       indicators: {
-        activeClasses: "bg-white dark:bg-gray-800",
+        activeClasses: "bg-white dark:bg-white-800",
         inactiveClasses:
-          "bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800",
+          "bg-white/50 dark:bg-white-800/50 hover:bg-white dark:hover:bg-white-800",
         items: [
           { position: 0, el: document.getElementById("carousel-indicator-0")! },
           { position: 1, el: document.getElementById("carousel-indicator-1")! },
@@ -68,7 +68,7 @@ export function Carrousel1() {
   return (
     <div id="carousel-example" className="relative w-full bg-black">
       {/* Carousel wrapper */}
-      <div className="relative h-120 md:h-125">
+      <div className="relative h-120 md:h-125 2xl:h-150">
         {carousel1.map((n, i) => (
           <div
             key={i + 1}
@@ -84,21 +84,21 @@ export function Carrousel1() {
               priority
             />
 
-            <div className=" md:min-w-[1150px] md:max-w-[80%] h-full flex flex-col items-center md:items-start justify-center relative text-6xl">
+            <div className=" md:w-[75%] 2xl:w-[1550px] md:max-w-[80%] h-full flex flex-col items-center md:items-start justify-center relative text-6xl">
               <div className="w-[70%] text-left md:text-left text-white">
-                <h1 className="text-[20px] md:text-[40px] font-bold mb-4 leading-8 md:leading-14">
+                <h1 className="text-[20px] md:text-[40px] 2xl:text-[44px] 2xl:pr-10 font-bold mb-4 leading-8 md:leading-14">
                   {n.title}
                 </h1>
               </div>
               <div className="w-[70%] md:w-[59%]">
-                <p className="text-[17px] md:text-[20px] text-white leading-6 md:leading-10">
+                <p className="text-[17px] md:text-[20px] 2xl:text-[26px] text-white leading-6 md:leading-10">
                   {n.description}
                 </p>
               </div>
               <div className="w-[70%] md:w-[60%] p-0">
                 <button
                   type="button"
-                  className="text-white bg-(--primary-purple) hover:bg-white focus:ring-4 focus:ring-purple-950 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-purple-800 hover:cursor-pointer hover:text-(--primary-purple)"
+                  className="text-white bg-(--primary-purple) hover:bg-white focus:ring-4 focus:ring-purple-950 font-medium rounded-lg text-sm md:text-[17px] 2xl:text-[20px] px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-purple-800 hover:cursor-pointer hover:text-(--primary-purple)"
                 >
                   {n.action}
                 </button>
@@ -128,7 +128,7 @@ export function Carrousel1() {
         className="absolute w-auto top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none md:px-10"
       >
         <svg
-          className="w-9 h-9 text-white dark:text-(--primary-purple) rtl:rotate-180"
+          className="w-9 h-9 text-white dark:text-white rtl:rotate-180"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -153,7 +153,7 @@ export function Carrousel1() {
         className="absolute w-auto top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none md:px-10"
       >
         <svg
-          className="w-9 h-9 text-white dark:text-(--primary-purple) rtl:rotate-180"
+          className="w-9 h-9 text-white dark:text-white rtl:rotate-180"
           aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
