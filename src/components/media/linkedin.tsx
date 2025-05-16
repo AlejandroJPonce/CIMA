@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Linkedin() {
   return (
     <Image
-      className="dark w-[80%] h-[80%] object-contain"
+      className="dark w-10 h-10 object-contain hover:cursor-pointer hover:invert-25"
       src={"/icons/linkedin.svg"}
       width={100}
       height={100}

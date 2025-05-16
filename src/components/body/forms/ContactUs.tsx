@@ -1,8 +1,8 @@
 export function ContactUs() {
   return (
     <div className="w-full h-120 flex flex-col justify-center items-center gap-7">
-      <div>
-        <span className="font-normal text-4xl">
+      <div className="w-full text-center p-2">
+        <span className="font-light text-4xl md:text-5xl">
           Contáctanos a nuestra línea directa de{" "}
           <span className="text-green-600 font-black text-5xl">WhatsApp</span>
         </span>

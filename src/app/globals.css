@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @font-face {
   font-family: "Jost";
   src: url("/public/fonts/Jost-Regular.ttf")

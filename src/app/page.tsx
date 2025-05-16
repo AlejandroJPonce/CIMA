@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Navbar1 />
-      {/* <Carrousel1 /> */}
+      <Carrousel1 />
       <Grid1
         name={grid1Info.name}
         description={grid1Info.description}
@@ -33,7 +33,7 @@ export default function Home() {
         name={grid4Info.name}
         description={grid4Info.description}
         image={grid4Info.image}
-      />x
+      />
 
       <Carrousel2 data={profiles}/>
       <ContactUs />

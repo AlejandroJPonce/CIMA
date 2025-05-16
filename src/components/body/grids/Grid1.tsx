@@ -2,16 +2,15 @@ import Image from "next/image";
 
 export function Grid1({ name, description, image }: any) {
   return (
-    <div className="w-full h-auto flex flex-col justify-around items-center">
-      <div className="grid grid-cols-2 w-full h-full">
-        <div className=" h-120 w-[100%] flex flex-col items-start justify-center px-12">
+    <div className="flex flex-col justify-around items-center w-full h-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full h-[420px] md:h-full">
+        <div className="order-2 py-4 md:order-1 h-auto md:h-120 w-[100%] flex flex-col items-start justify-center px-12">
           {/* Section Title */}
-          <div className="text-[32px] mb-5">{name}</div>
+          <div className="text-[22px] md:text-[32px] mb-5">{name}</div>
           {/* Section Descriptions */}
-          <div className="text-[20px]">{description}</div>
-          
+          <div className="invisible md:visible text-[17px] md:text-[20px]">{description}</div>
         </div>
-        <div className=" h-120 w-[100%] items-center justify-center flex align-middle">
+        <div className="order-1 md:order-2 h-80 md:h-120 w-[100%] items-center justify-center flex align-middle">
           <Image
             className="dark w-[80%] h-[80%] object-contain"
             src={image}

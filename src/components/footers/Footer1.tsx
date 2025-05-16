@@ -5,12 +5,20 @@ import { Twitter } from "@/components/media/twitter";
 
 export function Footer1() {
   return (
-    <footer className="w-full h-auto flex flex-col justify-around items-center relative">
-      <img className="relative" src="/footerImage.png" alt="" />
-      <div className="absolute w-full flex flex-row justify-between items-center mt-100 px-17">
-        <div>
+    <footer
+      className="w-full min-h-[600px] md:min-h-[690px] flex items-center justify-center"
+      style={{
+        backgroundImage: "url('/footerImage.png')",
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+        backgroundPosition: "Top",
+        backgroundClip: "content-box",
+      }}
+    >
+      <div className="flex flex-row items-start mt-70 md:mt-115 border-blue justify-between w-screen h-auto md:px-15">
+        <div className="w-full md:w-[70%] h-[100%] flex flex-col items-start pl-4 justify-center min-w-[200px]">
           <Image
-            className="dark w-50 h-20 object-contain scale-300 pt-2"
+            className="w-20 h-20 scale-200 md:scale-350 object-contain ml-4 md:ml-12"
             src={"/logo2.png"}
             width={100}
             height={100}
@@ -19,9 +27,12 @@ export function Footer1() {
             priority
           />
 
-          <span className="text-white font-bold text-2xl ml-4"> Síguenos </span>
+          <span className="text-white font-bold text-2xl ml-2">
+            {" "}
+            Síguenos{" "}
+          </span>
 
-          <div className="flex flex-row justify-start items-center hover:cursor-pointer p-0 mx-1 gap-2">
+          <div className="flex flex-row justify-start items-center">
             <div>
               <Instagram />
             </div>
@@ -33,8 +44,7 @@ export function Footer1() {
             </div>
           </div>
         </div>
-
-        <div className="max-w-[305px] px-12 text-white text-1xl text-left">
+        <div className="text-white text-1xl text-left mt-5 md:w-[30%] md:px-20">
           <p>sales@cima.com</p>
           <p>+57 (322) 532-4904</p>
           <p> Carrera 30 # 1b - 215, Barranquilla, Atlantico</p>
