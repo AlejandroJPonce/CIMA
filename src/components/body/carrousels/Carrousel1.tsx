@@ -9,7 +9,7 @@ import type {
   InstanceOptions,
 } from "flowbite";
 import Image from "next/image";
-import { carousel1 } from "@/constants/carousels";
+import { carousel_1 } from "@/constants/carousels";
 
 export function Carrousel1() {
   useEffect(() => {
@@ -69,7 +69,7 @@ export function Carrousel1() {
     <div id="carousel-example" className="relative w-full bg-black">
       {/* Carousel wrapper */}
       <div className="relative h-120 md:h-130 2xl:h-150">
-        {carousel1.map((n, i) => (
+        {carousel_1.map((n: any, i: number) => (
           <div
             key={i}
             id={n.id}

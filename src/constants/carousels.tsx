@@ -1,4 +1,4 @@
-export const carousel1 = [
+export const carousel_1 = [
   {  
     id: '0',
     title: 'CIMA: Diseño, Tecnología y Espacios con proposito',
@@ -36,4 +36,36 @@ export const carousel1 = [
   },
 ]
 
+export const carousel_3 = [
+  {
+    id: 1,
+    img_ref: '/bg-2',
+    description: 'proyecto',
+    title: 'Proyecto 1'
+  },
+  {
+    id: 2,
+    img_ref: '/bg-2',
+    description: 'proyecto',
+    title: 'Proyecto 1'
+  },
+  {
+    id: 3,
+    img_ref: '/bg-2',
+    description: 'proyecto',
+    title: 'Proyecto 1'
+  },
+  {
+    id: 4,
+    img_ref: '/bg-2',
+    description: 'proyecto',
+    title: 'Proyecto 1'
+  },
+  {
+    id: 5,
+    img_ref: '/bg-2',
+    description: 'proyecto',
+    title: 'Proyecto 1'
+  },
+]
   

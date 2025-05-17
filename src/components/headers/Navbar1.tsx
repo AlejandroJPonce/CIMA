@@ -82,7 +82,7 @@ export function Navbar1() {
 
   return (
     <div className="w-full h-auto flex flex-col justify-center items-center sticky top-0 z-50">
-      <nav className="bg-(--primary-purple) border-gray-200 max-h-[80px] w-full">
+      <nav className="bg-(--primary-purple) border-gray-200 max-h-[100px] w-full">
         <div className="max-w-screen flex flex-wrap items-center justify-between">
           {/* logo */}
           <a className="flex items-center space-x-3 rtl:space-x-reverse max-h-[80px] hover:cursor-pointer">
@@ -160,16 +160,6 @@ export function Navbar1() {
                   Equipo
                 </a>
               </li>
-              <li>
-                <a
-                  onClick={() => setActiveNav("socials")}
-                  id="socials_id"
-                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer"
-                >
-                  Social
-                </a>
-              </li>
-
               <li className="mt-2">
                 <button
                   onClick={() => setActiveNav("contact")}
@@ -177,7 +167,7 @@ export function Navbar1() {
                   type="button"
                   className="text-white bg-(--primary-orange) hover:bg-purple-700 font-medium rounded-lg text-sm md:text-[18px] px-5 py-2.5 me-2 mb-2 hover:cursor-pointer"
                 >
-                  Contact Us
+                  Contáctanos
                 </button>
               </li>
             </ul>
