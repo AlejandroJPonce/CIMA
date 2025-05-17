@@ -2,26 +2,97 @@
 
 import { log } from "console";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export function Navbar1() {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState("services");
+
+  useEffect(() => {
+    document.getElementById("logo_id")?.addEventListener("click", function () {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+
+    document.getElementById("start_id")?.addEventListener("click", function () {
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: "smooth",
+      });
+    });
+
+    document
+      .getElementById("services_id")
+      ?.addEventListener("click", function () {
+        window.scroll({
+          top: 520, // Scroll to 500 pixels from the top
+          left: 0,
+          behavior: "smooth", // Add smooth scrolling animation
+        });
+      });
+
+    document.getElementById("team_id")?.addEventListener("click", function () {
+      if (window.innerWidth < 800) {
+        window.scroll({
+          top: 2300, // Scroll to 500 pixels from the top
+          left: 0,
+          behavior: "smooth", // Add smooth scrolling animation
+        });
+      } else {
+        window.scroll({
+          top: 2680, // Scroll to 500 pixels from the top
+          left: 0,
+          behavior: "smooth", // Add smooth scrolling animation
+        });
+      }
+    });
+
+    document
+      .getElementById("contact_us_id")
+      ?.addEventListener("click", function () {
+        if (window.innerWidth < 800) {
+          window.scroll({
+            top: 2900, // Scroll to 500 pixels from the top
+            left: 0,
+            behavior: "smooth", // Add smooth scrolling animation
+          });
+        } else {
+          window.scroll({
+            top: 3220, // Scroll to 500 pixels from the top
+            left: 0,
+            behavior: "smooth", // Add smooth scrolling animation
+          });
+        }
+      });
+
+    document
+      .getElementById("socials_id")
+      ?.addEventListener("click", function () {
+        window.scroll({
+          top: 3800,
+          left: 0,
+          behavior: "smooth",
+        });
+      });
+  }, []);
 
   return (
-    <div className="w-full h-20 flex flex-col justify-center items-center sticky top-0 z-50">
+    <div className="w-full h-auto flex flex-col justify-center items-center sticky top-0 z-50">
       <nav className="bg-(--primary-purple) border-gray-200 max-h-[80px] w-full">
         <div className="max-w-screen flex flex-wrap items-center justify-between">
           {/* logo */}
-          <a
-            href="https://flowbite.com/"
-            className="flex items-center space-x-3 rtl:space-x-reverse max-h-[80px]"
-          >
+          <a className="flex items-center space-x-3 rtl:space-x-reverse max-h-[80px] hover:cursor-pointer">
             <Image
-              src="/squareLogo.png"
+              id="logo_id"
+              src="/logo2.png"
               alt="Flowbite Logo"
               width={100}
               height={100}
-              className="scale-170"
+              className="scale-150 pl-2 pt-1"
             />
           </a>
           {/* hamburger menu */}
@@ -61,41 +132,50 @@ export function Navbar1() {
             <ul className="font-medium flex flex-col items-center justify-center p-4 md:p-0 md:flex-row md:space-x-15 rtl:space-x-reverse md:mt-0 md:border-0 ">
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 md:text-[17px] text-white rounded-sm md:bg-transparent md:text-(--primary-orange) md:p-0 dark:text-white md:dark:text-(--primary-orange)"
+                  onClick={() => setActiveNav("start")}
+                  id="start_id"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange)"
                   aria-current="page"
                 >
-                  Home
+                  Inicio
+                </a>
+              </li>
+
+              <li>
+                <a
+                  onClick={() => setActiveNav("services")}
+                  id="services_id"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange)"
+                  aria-current="page"
+                >
+                  Servicios
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={() => setActiveNav("team")}
+                  id="team_id"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer"
                 >
-                  About
+                  Equipo
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
-                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  onClick={() => setActiveNav("socials")}
+                  id="socials_id"
+                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer"
                 >
-                  Services
+                  Social
                 </a>
               </li>
-              <li>
-                <a
-                  href="#"
-                  className="block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                >
-                  Pricing
-                </a>
-              </li>
+
               <li className="mt-2">
                 <button
+                  onClick={() => setActiveNav("contact")}
+                  id="contact_us_id"
                   type="button"
-                  className="text-white bg-(--primary-orange) hover:bg-purple-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm md:text-[18px] px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-purple-800 hover:cursor-pointer"
+                  className="text-white bg-(--primary-orange) hover:bg-purple-700 font-medium rounded-lg text-sm md:text-[18px] px-5 py-2.5 me-2 mb-2 hover:cursor-pointer"
                 >
                   Contact Us
                 </button>

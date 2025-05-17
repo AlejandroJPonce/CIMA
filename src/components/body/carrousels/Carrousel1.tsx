@@ -68,16 +68,16 @@ export function Carrousel1() {
   return (
     <div id="carousel-example" className="relative w-full bg-black">
       {/* Carousel wrapper */}
-      <div className="relative h-120 md:h-125 2xl:h-150">
+      <div className="relative h-120 md:h-130 2xl:h-150">
         {carousel1.map((n, i) => (
           <div
-            key={i + 1}
+            key={i}
             id={n.id}
             className="w-full h-full flex items-center justify-center "
           >
             <Image
               src={n.img_ref}
-              className="object-cover w-full h-full absolute brightness-70"
+              className="object-cover w-full h-full absolute brightness-60"
               alt={`Slide ${n.id}`}
               width={1000}
               height={500}
@@ -142,10 +142,6 @@ export function Carrousel1() {
             d="M5 1 1 5l4 4"
           />
         </svg>
-
-        {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-          ‹
-        </span> */}
       </button>
       <button
         type="button"
@@ -167,9 +163,6 @@ export function Carrousel1() {
             d="m1 9 4-4-4-4"
           />
         </svg>
-        {/* <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-          ›
-        </span> */}
       </button>
     </div>
   );

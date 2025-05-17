@@ -7,14 +7,17 @@ import { Grid2 } from "@/components/body/grids/Grid2";
 import { Footer1 } from "@/components/footers/Footer1";
 import { grid1Info, grid2Info, grid3Info, grid4Info } from "@/constants/GridsInfo";
 import { ContactUs } from "@/components/body/forms/ContactUs";
-// import { profiles } from "@/constants/Profiles";
+import { profiles } from "@/constants/Profiles";
+import Hero1 from "@/components/body/hero/Hero1";
+import Carousel3 from "@/components/body/carrousels/Carrousel3";
 
 export default function Home() {
   return (
     <>
       <Navbar1 />
-      <Carrousel1 />
-      <Grid1
+      <Hero1 />
+      <Carousel3 />
+      {/* <Grid1
         name={grid1Info.name}
         description={grid1Info.description}
         image={grid1Info.image}
@@ -33,9 +36,9 @@ export default function Home() {
         name={grid4Info.name}
         description={grid4Info.description}
         image={grid4Info.image}
-      />
+      /> */}
 
-      {/* <Carrousel2 data={profiles}/> */}
+      <Carrousel2 data={profiles}/>
       <ContactUs />
 
       <Footer1 />

@@ -15,10 +15,10 @@ export function Profile1 ({name, role, photo}: {name: string, role: string, phot
         />
       </div>
       <div className="text-center">
-        <p className="font-bold text-2xl text-white">
+        <p className="font-bold text-2xl text-(--primary-purple)">
           {name}
         </p>
-        <p className="font-normal text-1xl text-white">
+        <p className="font-normal text-1xl text-(--primary-purple)">
           {role}
         </p>
       </div>
