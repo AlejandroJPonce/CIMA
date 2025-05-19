@@ -11,7 +11,7 @@ export default function Hero1() {
   return (
     <>
       <div
-        className="w-full h-130 flex items-center justify-start md:px-40"
+        className="w-full h-170 flex items-center md:justify-start justify-center px-10 md:px-40"
         style={{
           backgroundImage: "url('/bg-3.png')",
           backgroundSize: "cover",
@@ -20,16 +20,16 @@ export default function Hero1() {
           backgroundClip: "border-box",
         }}
       >
-        <div className=" md:max-w-[850px] flex flex-col gap-5">
+        <div className="flex flex-col md:max-w-[850px] gap-7">
           {/* title */}
-          <div className="">
-            <span className="font-bold text-white text-6xl">
+          <div>
+            <span className="font-bold text-white text-3xl md:text-6xl">
               CIMA: Diseño, Tecnología y Espacios con proposito
             </span>
           </div>
 
           {/* description */}
-          <div className=" w-[100%] h-auto flex items-center justify-start gap-5 py-3">
+          <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-15 w-[100%] h-auto">
             <div className="flex items-center justify-center">
               <button
                 type="button"

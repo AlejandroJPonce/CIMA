@@ -39,31 +39,31 @@ export const carousel_1 = [
 export const carousel_3 = [
   {
     id: 1,
-    img_ref: '/bg-2',
+    photo: '/nike.jpg',
     description: 'proyecto',
     title: 'Proyecto 1'
   },
   {
     id: 2,
-    img_ref: '/bg-2',
+    photo: '/new_balance.png',
     description: 'proyecto',
     title: 'Proyecto 1'
   },
   {
     id: 3,
-    img_ref: '/bg-2',
+    photo: '/google.webp',
     description: 'proyecto',
     title: 'Proyecto 1'
   },
   {
     id: 4,
-    img_ref: '/bg-2',
+    photo: '/puma.png',
     description: 'proyecto',
     title: 'Proyecto 1'
   },
   {
     id: 5,
-    img_ref: '/bg-2',
+    photo: '/new_balance.png',
     description: 'proyecto',
     title: 'Proyecto 1'
   },

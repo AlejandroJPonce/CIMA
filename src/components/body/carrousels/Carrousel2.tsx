@@ -14,7 +14,7 @@ export function Carrousel2({ data }: { data: any }) {
         if (slider) {
           slider.scrollTo({
             top: 0,
-            left: Math.max((scrollAm += 0), 1600),
+            left: Math.max((scrollAm += 0), 2900),
             behavior: "smooth",
           });
           // Adjust the value as needed
@@ -27,7 +27,7 @@ export function Carrousel2({ data }: { data: any }) {
         if (slider) {
            slider.scrollTo({
             top: 0,
-            left: Math.min((scrollAm -= 0), 1600),
+            left: Math.min((scrollAm -= 0), 2900),
             behavior: "smooth",
           });// Adjust the value as needed
         }
@@ -45,7 +45,7 @@ export function Carrousel2({ data }: { data: any }) {
 
         <div
           id="slider-section"
-          className="absolute w-full h-auto flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden gap-50 pl-42 pr-42"
+          className="absolute w-full h-auto flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden gap-50 pl-23 pr-21 md:pl-42 md:pr-42"
         >
           {data.map((profile: any, index: number) => (
             <Profile1
@@ -58,7 +58,7 @@ export function Carrousel2({ data }: { data: any }) {
         </div>
         <div className="w-full h-auto text-center">
           <span className=" text-white md:text-xl">
-            <span className="text-(--primary-orange) underline">
+            <span className="text-(--primary-orange) underline hover:cursor-pointer">
               Conoce más
             </span>{" "}
             sobre nuestros roles
@@ -72,7 +72,7 @@ export function Carrousel2({ data }: { data: any }) {
           className="absolute bg-(--primary-purple) w-auto top-0 start-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none md:px-10"
         >
           <svg
-            className="w-9 h-9 text-white dark:text-white rtl:rotate-180"
+            className="w-9 h-9 text-white dark:text-white rtl:rotate-180 hover:scale-110 transition duration-300 ease-in-out"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -93,7 +93,7 @@ export function Carrousel2({ data }: { data: any }) {
           className="absolute bg-(--primary-purple) w-auto top-0 end-0 z-30 flex items-center justify-center h-full cursor-pointer group focus:outline-none md:px-10"
         >
           <svg
-            className="w-9 h-9 text-white dark:text-white rtl:rotate-180"
+            className="w-9 h-9 text-white dark:text-white rtl:rotate-180 hover:scale-110 transition duration-300 ease-in-out"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

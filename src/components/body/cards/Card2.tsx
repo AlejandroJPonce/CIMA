@@ -8,9 +8,9 @@ interface serviceCardProps {
 export default function Card2(props: serviceCardProps) {
   return (
     <>
-      <div className="service-item-box">
-        <div className="service-item-box-header-icon">
-          <div className="service-item-box-header-icon-box">
+      <div className="p-5 max-w-[350px] rounded-3xl bg-white border-[1px] border-gray-100">
+        <div className="mb-5 max-w-[40px] max-h-[40px]">
+          <div className="flex items-center justify-center rounded-[7px] bg-[#343434] text-white p-[7px] ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -27,15 +27,17 @@ export default function Card2(props: serviceCardProps) {
             </svg>
           </div>
         </div>
-        <div className="service-item-box-header">
-          <strong className="service-item-box-header-title">
-            {props.title}
-          </strong>
+        <div>
+          <strong className="text-[20px]">{props.title}</strong>
         </div>
-        <div className="service-item-box-body">
-          <span className="service-item-box-body-description">
-            {props.description}
-          </span>
+        <div>
+          <span className="text-[14px] text-gray-500">{props.description}</span>
+        </div>
+        <div className="w-full flex items-center justify-end mt-5">
+          <a className="text-(--primary-orange) underline hover:cursor-pointer">
+            {" "}
+            Ver más{" "}
+          </a>
         </div>
       </div>
     </>

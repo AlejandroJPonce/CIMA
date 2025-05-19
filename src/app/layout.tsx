@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Jost } from "next/font/google";
 import "./globals.css";
-import 'flowbite';
+import "flowbite";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 const jostSans = Jost({
   variable: "--font-jost-sans",
   subsets: ["latin"],
-})
+});
 
 const jostMono = Jost({
   variable: "--font-jost-mono",
@@ -40,7 +40,13 @@ export default function RootLayout({
     <html lang="es">
       <body
         className={`${jostSans.variable} ${jostMono.variable} antialiased`}
-        style={{ backgroundImage: "url('/backgrounds/fondo.png')", backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "center", backgroundClip: "content-box", backgroundAttachment: "fixed" }}
+        style={{
+          backgroundImage: "url('/backgrounds/fondo.png')",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
       >
         {children}
       </body>

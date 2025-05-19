@@ -8,25 +8,19 @@ import Hero1 from "@/components/body/hero/Hero1";
 import Carousel3 from "@/components/body/carrousels/Carrousel3";
 import { carousel_3 } from "@/constants/carousels";
 import Announcer from "@/components/body/announcers/Announcer";
-import Card2 from "@/components/body/cards/Card2";
-
+import Grid4 from "@/components/body/grids/Grid4";
 
 export default function Home() {
   return (
     <>
       <Navbar1 />
       <Hero1 />
-      <Carousel3 data={carousel_3} />
       <Announcer />
+      <Grid4 />
+      <Carousel3 data={carousel_3} />
+
+      <Carrousel2 data={profiles} />
       <ContactUs />
-      <Carrousel2 data={profiles}/>
-
-      <hr />
-
-      <Card2 title="hola" description="Mundo"/>
-
-      <hr />
-
 
       <Footer1 />
     </>

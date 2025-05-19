@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Instagram() {
   return (
     <Image
-      className="w-10 h-10 object-contain hover:cursor-pointer hover:invert-25"
+      className="w-10 h-10 object-contain hover:cursor-pointer invert"
       src={"/icons/instagram.svg"}
       width={100}
       height={100}

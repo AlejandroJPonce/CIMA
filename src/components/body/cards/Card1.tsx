@@ -1,9 +1,15 @@
-export default function ({img_ref} : { img_ref?: String }) {
+export default function ({ img_ref }: { img_ref?: String }) {
   return (
     <>
-      <div className="bg-white rounded-xl hover:scale-105 hover:cursor-pointer">
-        <img src="/bg-1.png" alt="sasd" className="md:min-w-[400px]! md:min-h-[285px]! rounded-xl" />
-      </div>
+      <div
+        className="min-w-89 h-100 bg-white border-1 border-gray-100 rounded-xl hover:scale-105 md:min-w-[400px] md:min-h-[285px] hover:cursor-pointer transition duration-600 ease-in-out"
+        style={{
+          backgroundImage: `url('${img_ref}')`,
+          backgroundSize: "200px",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
     </>
-  )
+  );
 }
