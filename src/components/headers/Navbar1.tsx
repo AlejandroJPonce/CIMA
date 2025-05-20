@@ -190,7 +190,7 @@ export function Navbar1() {
                 <button
                   id="contact_us_id"
                   type="button"
-                  className="text-white bg-(--primary-orange) hover:bg-(--primary-purple) font-medium rounded-lg md:text-[18px] px-5 hover:cursor-pointer transition duration-400 ease-in-out p-2"
+                  className="text-white bg-(--primary-orange) hover:bg-white hover:text-(--primary-purple) font-medium rounded-lg md:text-[18px] px-5 hover:cursor-pointer transition duration-400 ease-in-out p-2"
                 >
                   Contáctanos
                 </button>
