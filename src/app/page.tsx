@@ -8,7 +8,6 @@ import Carousel3 from "@/components/body/carrousels/Carrousel3";
 import { carousel_3 } from "@/constants/carousels";
 import Announcer from "@/components/body/announcers/Announcer";
 import Grid4 from "@/components/body/grids/Grid4";
-import Modal1 from "@/components/modals/Modal1";
 
 export default function Home() {
   return (

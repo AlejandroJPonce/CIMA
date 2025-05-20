@@ -72,7 +72,7 @@ export function Navbar1() {
       });
 
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 200) {
+      if (window.scrollY > 10) {
         setScrolling(true);
       } else {
         setScrolling(false);
@@ -94,11 +94,11 @@ export function Navbar1() {
           <a className="flex items-center hover:cursor-pointer px-5" onClick={() => router.push('/')}>
             <Image
               id="logo_id"
-              src={`${scrolling ? "/logo2.png" : "/logo1.png"}`}
+              src={`${scrolling ? "/logo2.png" : "/logo2.png"}`}
               alt="Flowbite Logo"
               width={100}
               height={100}
-              className={`scale-150 `}
+              className={`cale-150 pt-1`}
             />
           </a>
           {/* hamburger menu */}
@@ -134,7 +134,7 @@ export function Navbar1() {
               !isOpen
                 ? "hidden"
                 : "bg-white fixed top-0 flex flex-col items-center justify-between gap-20 pt-1 pb-12"
-            } w-full h-[100%] md:block md:w-auto md:px-5 `}
+            } w-full h-[100%] md:block md:w-auto md:px-5`}
             id="navbar-1"
           >
             {isOpen && (
@@ -142,10 +142,10 @@ export function Navbar1() {
                 <Image
                   id="logo_id"
                   src="/logo1.png"
-                  alt="Flowbite Logo"
+                  alt="Cima Logo"
                   width={100}
                   height={100}
-                  className={`scale-150 `}
+                  className="scale-200"
                 />
               </div>
             )}
@@ -157,7 +157,7 @@ export function Navbar1() {
                 <a
                   id="start_id"
                   className={`${
-                    !scrolling || isOpen ? "text-(--primary-purple)!" : ""
+                    !scrolling || isOpen ? "text-white" : ""
                   } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                   aria-current="page"
                 >
@@ -169,7 +169,7 @@ export function Navbar1() {
                 <a
                   id="services_id"
                   className={`${
-                    !scrolling || isOpen ? "text-(--primary-purple)!" : ""
+                    !scrolling || isOpen ? "text-white" : ""
                   } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                   aria-current="page"
                 >
@@ -180,7 +180,7 @@ export function Navbar1() {
                 <a
                   id="team_id"
                   className={`${
-                    !scrolling || isOpen ? "text-(--primary-purple)!" : ""
+                    !scrolling || isOpen ? "text-white" : ""
                   } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                 >
                   Equipo

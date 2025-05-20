@@ -3,10 +3,17 @@
 import { Profile1 } from "@/components/users/Profile1";
 import { useEffect } from "react";
 
-export function Carrousel2({ data }: { data: any }) {
+type profile_t = {
+  name: string;
+  role: string;
+  photo: string;
+  profile_desc: string;
+};
+
+export function Carrousel2({ data }: { data: profile_t[] }) {
   useEffect(() => {
     const slider = document.getElementById("slider-section");
-    let scrollAm = 0
+    let scrollAm = 0;
 
     document
       .getElementById("data-carousel-next")
@@ -25,11 +32,11 @@ export function Carrousel2({ data }: { data: any }) {
       .getElementById("data-carousel-prev")
       ?.addEventListener("click", function () {
         if (slider) {
-           slider.scrollTo({
+          slider.scrollTo({
             top: 0,
             left: Math.min((scrollAm -= 0), 2900),
             behavior: "smooth",
-          });// Adjust the value as needed
+          }); // Adjust the value as needed
         }
       });
   }, []);
@@ -47,7 +54,7 @@ export function Carrousel2({ data }: { data: any }) {
           id="slider-section"
           className="absolute w-full h-auto flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden gap-50 pl-23 pr-21 md:pl-42 md:pr-42"
         >
-          {data.map((profile: any, index: number) => (
+          {data.map((profile: profile_t, index: number) => (
             <Profile1
               key={index}
               name={profile.name}

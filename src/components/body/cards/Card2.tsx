@@ -3,16 +3,37 @@
 import { useState } from "react";
 import "../../../../public/styles/ServiceCard.css";
 import Modal1 from "@/components/modals/Modal1";
-import {type serviceCardProps } from "@/types/ServiceCards";
 
+type op_t = {
+  value: string,
+}
 
+type options_t = {
+  title: string
+  description: op_t[]
+}
 
-export default function Card2(props: serviceCardProps) {
+interface elements  {
+  leader_name: string,
+  leader_occupations: string,
+  leader_experience: string,
+  profile_photo: string,
+  title: string,
+  description:string,
+  options: options_t[],
+
+}
+
+export default function Card2(props: elements) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <Modal1 open={isOpen} elements={props} handleClose={() => setIsOpen(false)} />
+      <Modal1
+        open={isOpen}
+        elements={props}
+        handleClose={() => setIsOpen(false)}
+      />
 
       <div className="p-5 max-w-[350px] rounded-3xl bg-white border-[1px] border-gray-100">
         <div className="mb-5 max-w-[40px] max-h-[40px]">

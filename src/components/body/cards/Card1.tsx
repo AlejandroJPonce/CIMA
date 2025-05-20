@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function ({ img_ref }: { img_ref?: String }) {
+export default function Card1 ({ img_ref }: { img_ref?: string }) {
   return (
     <>
       <div className="flex items-center justify-center min-w-50 h-full rounded-xl hover:scale-105 hover:cursor-pointer transition duration-600 ease-in-out shrink">

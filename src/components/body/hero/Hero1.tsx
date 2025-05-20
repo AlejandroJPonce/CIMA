@@ -13,7 +13,7 @@ export default function Hero1() {
       <div
         className="w-full h-170 flex items-center md:justify-start justify-center px-10 md:px-40"
         style={{
-          backgroundImage: "url('/bg-3.png')",
+          backgroundImage: "url('/color_2_bg.jpeg')",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
@@ -33,7 +33,7 @@ export default function Hero1() {
             <div className="flex items-center justify-center">
               <button
                 type="button"
-                className="md:min-w-[140px] text-white bg-(--primary-orange) hover:bg-purple-700 font-medium rounded-lg text-sm p-3 md:text-[20px] hover:cursor-pointer"
+                className="md:min-w-[140px] text-white bg-(--primary-orange) hover:bg-purple-700 font-medium rounded-lg text-sm p-3 md:text-[20px] hover:cursor-pointer transition duration-400 ease-in-out"
               >
                 Contáctanos
               </button>

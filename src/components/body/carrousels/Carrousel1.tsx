@@ -11,6 +11,14 @@ import type {
 import Image from "next/image";
 import { carousel_1 } from "@/constants/carousels";
 
+type carousel1_t = {
+  id: string;
+  title: string;
+  description: string;
+  action: string;
+  img_ref: string;
+};
+
 export function Carrousel1() {
   useEffect(() => {
     const carouselElement = document.getElementById("carousel-example");
@@ -69,7 +77,7 @@ export function Carrousel1() {
     <div id="carousel-example" className="relative w-full bg-black">
       {/* Carousel wrapper */}
       <div className="relative h-120 md:h-130 2xl:h-150">
-        {carousel_1.map((n: any, i: number) => (
+        {carousel_1.map((n: carousel1_t, i: number) => (
           <div
             key={i}
             id={n.id}

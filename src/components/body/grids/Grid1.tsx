@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export function Grid1({ name, description, image }: any) {
+export function Grid1({ name, description, image }: {name: string, description:string, image: string}) {
   return (
     <div className="flex flex-col justify-around items-center w-full h-auto mt-12">
       <div className="grid grid-cols-1 md:grid-cols-2 w-full h-[420px] md:h-full">

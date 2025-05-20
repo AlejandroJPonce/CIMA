@@ -1,17 +1,35 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { type serviceCardProps } from "@/types/ServiceCards";
-import Image from "next/image";
+
+type op_t = {
+  value: string,
+}
+
+type options_t = {
+  title: string
+  description: op_t[]
+}
+
+interface elements  {
+  leader_name: string,
+  leader_occupations: string,
+  leader_experience: string,
+  profile_photo: string,
+  title: string,
+  description:string,
+  options: options_t[],
+
+}
 
 export default function Modal1({
   open,
   elements,
   handleClose,
 }: {
-  open: Boolean;
-  elements: serviceCardProps;
-  handleClose: any;
+  open: boolean;
+  elements: elements;
+  handleClose: () => void;
 }) {
   // No need for useEffect here
 
@@ -131,10 +149,9 @@ export default function Modal1({
           {/* Options */}
 
           <div className="flex flex-col md:flex-row gap-3 w-full">
-            {elements.options.map((option: any, index: number) => (
-              <div className="border-1 border-gray-300 rounded-xl p-5 hover:border-(--primary-purple) hover:cursor-pointer hover:scale-102 transition duration-400 ease-in-out w-full md:w-1/3 bg-white ">
+            {elements.options.map((option: options_t, index: number) => (
+              <div key={index} className="border-1 border-gray-300 rounded-xl p-5 hover:border-(--primary-purple) hover:cursor-pointer hover:scale-102 transition duration-400 ease-in-out w-full md:w-1/3 bg-white ">
                 <div
-                  key={index}
                   className="flex items-center justify-between gap-2 w-full"
                 >
                   <span>{option.title}</span>
@@ -179,8 +196,8 @@ export default function Modal1({
                 </div>
                 <hr className="my-4 w-full" />
                 <div className="flex flex-col gap-4 h-[100%]">
-                  {option.description.map((item: any, index: number) => (
-                    <div className="flex flex-row items-center justify-start align-middle w-full gap-4">
+                  {option.description.map((item: op_t, index: number) => (
+                    <div key={index} className="flex flex-row items-center justify-start align-middle w-full gap-4">
                       <div className="w-6 h-6">
                         <svg
                           viewBox="0 0 24 24"
