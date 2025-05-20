@@ -1,13 +1,19 @@
-import "../../../../public/styles/ServiceCard.css";
+"use client";
 
-interface serviceCardProps {
-  title: string;
-  description: string;
-}
+import { useState } from "react";
+import "../../../../public/styles/ServiceCard.css";
+import Modal1 from "@/components/modals/Modal1";
+import {type serviceCardProps } from "@/types/ServiceCards";
+
+
 
 export default function Card2(props: serviceCardProps) {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
+      <Modal1 open={isOpen} elements={props} handleClose={() => setIsOpen(false)} />
+
       <div className="p-5 max-w-[350px] rounded-3xl bg-white border-[1px] border-gray-100">
         <div className="mb-5 max-w-[40px] max-h-[40px]">
           <div className="flex items-center justify-center rounded-[7px] bg-[#343434] text-white p-[7px] ">
@@ -31,10 +37,13 @@ export default function Card2(props: serviceCardProps) {
           <strong className="text-[20px]">{props.title}</strong>
         </div>
         <div>
-          <span className="text-[14px] text-gray-500">{props.description}</span>
+          <span className="text-[14px] text-gray-500 line-clamp-5">{props.description}</span>
         </div>
         <div className="w-full flex items-center justify-end mt-5">
-          <a className="text-(--primary-orange) underline hover:cursor-pointer">
+          <a
+            className="text-(--primary-orange) underline hover:cursor-pointer"
+            onClick={() => setIsOpen(true)}
+          >
             {" "}
             Ver más{" "}
           </a>

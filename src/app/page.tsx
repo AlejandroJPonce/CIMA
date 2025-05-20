@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Navbar1 } from "@/components/headers/Navbar1";
 import { Carrousel2 } from "@/components/body/carrousels/Carrousel2";
 import { Footer1 } from "@/components/footers/Footer1";
@@ -9,6 +8,7 @@ import Carousel3 from "@/components/body/carrousels/Carrousel3";
 import { carousel_3 } from "@/constants/carousels";
 import Announcer from "@/components/body/announcers/Announcer";
 import Grid4 from "@/components/body/grids/Grid4";
+import Modal1 from "@/components/modals/Modal1";
 
 export default function Home() {
   return (
@@ -18,10 +18,8 @@ export default function Home() {
       <Announcer />
       <Grid4 />
       <Carousel3 data={carousel_3} />
-
       <Carrousel2 data={profiles} />
       <ContactUs />
-
       <Footer1 />
     </>
   );

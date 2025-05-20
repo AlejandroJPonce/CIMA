@@ -3,7 +3,7 @@ module.exports = {
   content: [
     // Si usas app directory (Next 13+)
     "./app/**/*.{js,ts,jsx,tsx}",
-    
+
     // Si usas pages directory (Next 12 o anterior)
     "./pages/**/*.{js,ts,jsx,tsx}",
 
@@ -15,8 +15,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      center: true,
+    },
   },
-  plugins: [
-    require("flowbite/plugin"),
-  ],
+  plugins: [require("flowbite/plugin")],
 };

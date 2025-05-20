@@ -1,15 +1,18 @@
+import Image from "next/image";
+
 export default function ({ img_ref }: { img_ref?: String }) {
   return (
     <>
-      <div
-        className="min-w-89 h-100 bg-white border-1 border-gray-100 rounded-xl hover:scale-105 md:min-w-[400px] md:min-h-[285px] hover:cursor-pointer transition duration-600 ease-in-out"
-        style={{
-          backgroundImage: `url('${img_ref}')`,
-          backgroundSize: "200px",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      ></div>
+      <div className="flex items-center justify-center min-w-50 h-full rounded-xl hover:scale-105 hover:cursor-pointer transition duration-600 ease-in-out shrink">
+        <Image
+          src={`${img_ref}`}
+          alt="Next.js logo"
+          width={100}
+          height={100}
+          quality={100}
+          priority
+        />
+      </div>
     </>
   );
 }

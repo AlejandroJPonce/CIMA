@@ -2,10 +2,13 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export function Navbar1() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+
+  const router = useRouter()
 
   useEffect(() => {
     document.getElementById("logo_id")?.addEventListener("click", function () {
@@ -43,7 +46,7 @@ export function Navbar1() {
         });
       } else {
         window.scroll({
-          top: 2680, // Scroll to 500 pixels from the top
+          top: 1400, // Scroll to 500 pixels from the top
           left: 0,
           behavior: "smooth", // Add smooth scrolling animation
         });
@@ -61,21 +64,11 @@ export function Navbar1() {
           });
         } else {
           window.scroll({
-            top: 3220, // Scroll to 500 pixels from the top
+            top: 2200, // Scroll to 500 pixels from the top
             left: 0,
             behavior: "smooth", // Add smooth scrolling animation
           });
         }
-      });
-
-    document
-      .getElementById("socials_id")
-      ?.addEventListener("click", function () {
-        window.scroll({
-          top: 3800,
-          left: 0,
-          behavior: "smooth",
-        });
       });
 
     window.addEventListener("scroll", () => {
@@ -98,7 +91,7 @@ export function Navbar1() {
       >
         <div className="max-w-screen flex flex-wrap items-center justify-between">
           {/* logo */}
-          <a className="flex items-center hover:cursor-pointer px-5">
+          <a className="flex items-center hover:cursor-pointer px-5" onClick={() => router.push('/')}>
             <Image
               id="logo_id"
               src={`${scrolling ? "/logo2.png" : "/logo1.png"}`}
@@ -193,7 +186,7 @@ export function Navbar1() {
                   Equipo
                 </a>
               </li>
-              <li className="mt-2">
+              <li className="mt-2 md:mt-0">
                 <button
                   id="contact_us_id"
                   type="button"

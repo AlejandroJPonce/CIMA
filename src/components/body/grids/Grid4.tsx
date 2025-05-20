@@ -1,5 +1,6 @@
 import "../../../../public/styles/MainServices.css";
 import Card2 from "../cards/Card2";
+import { services } from "@/constants/services";
 
 export default function Grid4() {
   return (
@@ -15,22 +16,18 @@ export default function Grid4() {
             </p>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-center gap-5">
-            <Card2
-              title="Diseño Grafico"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.,"
-            />
-            <Card2
-              title="Desarrollo Web"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.,"
-            />
-            <Card2
-              title="Animación"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry."
-            />
-            <Card2
-              title="Diseño de espacios"
-              description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry."
-            />
+            {services.map((el, index) => (
+              <Card2
+                key={index}
+                title={el.title}
+                description={el.description} 
+                options={el.options}   
+                leader_experience={el.leader_experience}           
+                leader_name={el.leader_name}      
+                leader_occupations={el.leader_occupations}     
+                profile_photo={el.profile_photo}     
+              />
+            ))}
           </div>
         </div>
       </div>
