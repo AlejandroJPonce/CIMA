@@ -12,7 +12,7 @@ export function ContactUs() {
       <button className="flex flex-row items-center justify-center gap-3 text-white text-2xl font-bold bg-green-600 hover:bg-(--primary-orange) hover:text-white hover:cursor-pointer py-4 px-6 rounded-full transition duration-400 ease-in-out hover:scale-105">
         Contactar
         <Image
-          className="w-[200px] h-[200px] rounded-full object-center object-cover"
+          className="w-[30px] h-[30px] rounded-full object-center object-cover"
           src='/icons/whatsapp.svg'
           alt="contact_logo"
           width={100}

@@ -94,7 +94,7 @@ export function Navbar1() {
           <a className="flex items-center hover:cursor-pointer px-5" onClick={() => router.push('/')}>
             <Image
               id="logo_id"
-              src={`${scrolling ? "/logo2.png" : "/logo2.png"}`}
+              src={`${scrolling ? "/logo2.PNG" : "/logo1.PNG"}`}
               alt="nav_Logo"
               width={100}
               height={100}
