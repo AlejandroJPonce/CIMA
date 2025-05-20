@@ -19,7 +19,7 @@ export function Footer1() {
         <div className="w-full md:w-[70%] h-[100%] flex flex-col items-start pl-4 2xl:pl-10 justify-center min-w-[200px]">
           <Image
             className="w-20 h-20 scale-200 md:scale-350 object-contain ml-4 md:ml-12 "
-            src={"/logo1.PNG"}
+            src={"/logo2.PNG"}
             width={100}
             height={100}
             quality={100}
