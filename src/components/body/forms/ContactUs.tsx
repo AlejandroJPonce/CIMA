@@ -13,7 +13,7 @@ export function ContactUs() {
         Contactar
         <Image
           className="w-[200px] h-[200px] rounded-full object-center object-cover"
-          src={`${'/whatsapp.svg'}`}
+          src='/icons/whatsapp.svg'
           alt="contact_logo"
           width={100}
           height={100}
