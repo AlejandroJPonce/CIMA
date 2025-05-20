@@ -141,7 +141,7 @@ export function Navbar1() {
               <div className="">
                 <Image
                   id="logo_id"
-                  src="/logo1.png"
+                  src="/logo1.PNG"
                   alt="Cima Logo"
                   width={100}
                   height={100}
