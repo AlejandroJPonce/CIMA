@@ -95,7 +95,7 @@ export function Navbar1() {
             <Image
               id="logo_id"
               src={`${scrolling ? "/logo2.png" : "/logo2.png"}`}
-              alt="Flowbite Logo"
+              alt="nav_Logo"
               width={100}
               height={100}
               className={`cale-150 pt-1`}

@@ -19,18 +19,15 @@ export function Footer1() {
         <div className="w-full md:w-[70%] h-[100%] flex flex-col items-start pl-4 2xl:pl-10 justify-center min-w-[200px]">
           <Image
             className="w-20 h-20 scale-200 md:scale-350 object-contain ml-4 md:ml-12 "
-            src={"/logo2.png"}
+            src={"/logo1.png"}
             width={100}
             height={100}
             quality={100}
-            alt="Next.js logo"
+            alt="foot_logo"
             priority
           />
 
-          <span className="text-white font-bold text-2xl ml-2">
-            {" "}
-            Síguenos{" "}
-          </span>
+          <span className="text-white font-bold text-2xl ml-2"> Síguenos </span>
 
           <div className="flex flex-row justify-start items-center">
             <div>
