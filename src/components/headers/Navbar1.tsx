@@ -31,7 +31,7 @@ export function Navbar1() {
       .getElementById("services_id")
       ?.addEventListener("click", function () {
         window.scroll({
-          top: 675, // Scroll to 500 pixels from the top
+          top: 1100, // Scroll to 500 pixels from the top
           left: 0,
           behavior: "smooth", // Add smooth scrolling animation
         });
@@ -46,7 +46,7 @@ export function Navbar1() {
         });
       } else {
         window.scroll({
-          top: 1400, // Scroll to 500 pixels from the top
+          top: 2450, // Scroll to 500 pixels from the top
           left: 0,
           behavior: "smooth", // Add smooth scrolling animation
         });
