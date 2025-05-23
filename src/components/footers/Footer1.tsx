@@ -1,9 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { Instagram } from "@/components/media/instagram";
-import { Linkedin } from "@/components/media/linkedin";
-import { Twitter } from "@/components/media/twitter";
 
 export function Footer1() {
   return (
