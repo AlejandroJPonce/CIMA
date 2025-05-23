@@ -15,28 +15,28 @@ export const profiles = [
   },
   {
     name: "Alejandro Ponce",
-    role: "Web Developer",
+    role: "Desarrollador Web",
     photo: "/profile.svg",
     profile_desc: 
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia amet, rem placeat nesciunt itaque commodi velit fugit omnis dolor cumque veritatis sed laudantium repellat officia nostrum saepe perspiciatis eligendi accusamus!"
   },
   {
     name: "Laura Ponce",
-    role: "Graphic Design & UI/UX",
+    role: "Diseñadora Grafica & UI/UX",
     photo: "/profile.svg",
     profile_desc: 
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia amet, rem placeat nesciunt itaque commodi velit fugit omnis dolor cumque veritatis sed laudantium repellat officia nostrum saepe perspiciatis eligendi accusamus!"
   },
   {
     name: "Paz Mendoza",
-    role: "Architect",
+    role: "Arquitecta",
     photo: "/profile.svg",
     profile_desc: 
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia amet, rem placeat nesciunt itaque commodi velit fugit omnis dolor cumque veritatis sed laudantium repellat officia nostrum saepe perspiciatis eligendi accusamus!"
   },
   {
     name: "Wulfran Navarro",
-    role: "Animator",
+    role: "Animador Digital",
     photo: "/profile.svg",
     profile_desc: 
     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia amet, rem placeat nesciunt itaque commodi velit fugit omnis dolor cumque veritatis sed laudantium repellat officia nostrum saepe perspiciatis eligendi accusamus!"

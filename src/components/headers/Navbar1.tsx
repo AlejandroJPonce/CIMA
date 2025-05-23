@@ -8,7 +8,7 @@ export function Navbar1() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
 
-  const router = useRouter()
+  const router = useRouter();
 
   useEffect(() => {
     document.getElementById("logo_id")?.addEventListener("click", function () {
@@ -46,7 +46,7 @@ export function Navbar1() {
         });
       } else {
         window.scroll({
-          top: 2450, // Scroll to 500 pixels from the top
+          top: 2430, // Scroll to 500 pixels from the top
           left: 0,
           behavior: "smooth", // Add smooth scrolling animation
         });
@@ -64,7 +64,7 @@ export function Navbar1() {
           });
         } else {
           window.scroll({
-            top: 2200, // Scroll to 500 pixels from the top
+            top: 3450, // Scroll to 500 pixels from the top
             left: 0,
             behavior: "smooth", // Add smooth scrolling animation
           });
@@ -91,7 +91,10 @@ export function Navbar1() {
       >
         <div className="max-w-screen flex flex-wrap items-center justify-between">
           {/* logo */}
-          <a className="flex items-center hover:cursor-pointer px-5" onClick={() => router.push('/')}>
+          <a
+            className="flex items-center hover:cursor-pointer px-5"
+            onClick={() => router.push("/")}
+          >
             <Image
               id="logo_id"
               src={`${scrolling ? "/logo2.PNG" : "/logo1.PNG"}`}
@@ -156,9 +159,7 @@ export function Navbar1() {
               <li>
                 <a
                   id="start_id"
-                  className={`${
-                    !scrolling || isOpen ? "text-white" : ""
-                  } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
+                  className={` ${isOpen ? 'text-(--primary-purple)' : 'text-white'} block py-2 px-3 md:text-[17px] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                   aria-current="page"
                 >
                   Inicio
@@ -168,9 +169,7 @@ export function Navbar1() {
               <li>
                 <a
                   id="services_id"
-                  className={`${
-                    !scrolling || isOpen ? "text-white" : ""
-                  } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
+                  className={`${isOpen ? 'text-(--primary-purple)' : 'text-white'} block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                   aria-current="page"
                 >
                   Servicios
@@ -179,9 +178,7 @@ export function Navbar1() {
               <li>
                 <a
                   id="team_id"
-                  className={`${
-                    !scrolling || isOpen ? "text-white" : ""
-                  } block py-2 px-3 md:text-[17px] text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 dark:text-white md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
+                  className={`${isOpen ? 'text-(--primary-purple)' : 'text-white'} block py-2 px-3 md:text-[17px] rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-(--primary-orange) md:p-0 md:dark:hover:text-(--primary-orange) dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent hover:cursor-pointer focus:text-(--primary-orange) `}
                 >
                   Equipo
                 </a>
@@ -199,7 +196,7 @@ export function Navbar1() {
 
             {isOpen && (
               <div className="flex items-center justify-center w-full">
-                <div>
+                <div onClick={() => window.open("https://twitter.com/CimaColombia")}>
                   <Image
                     className="w-10 h-10 object-contain hover:cursor-pointer invert"
                     src={"/icons/instagram.svg"}
@@ -210,7 +207,7 @@ export function Navbar1() {
                     priority
                   />
                 </div>
-                <div>
+                <div onClick={() => window.open("https://twitter.com/CimaColombia")}>
                   <Image
                     className="w-10 h-10 object-contain hover:cursor-pointer invert"
                     src={"/icons/twitter.svg"}
@@ -221,7 +218,7 @@ export function Navbar1() {
                     priority
                   />
                 </div>
-                <div>
+                <div onClick={() => window.open("https://twitter.com/CimaColombia")}>
                   <Image
                     className="w-10 h-10 object-contain hover:cursor-pointer invert"
                     src={"/icons/linkedin.svg"}

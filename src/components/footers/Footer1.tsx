@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Instagram } from "@/components/media/instagram";
 import { Linkedin } from "@/components/media/linkedin";
@@ -30,14 +32,44 @@ export function Footer1() {
           <span className="text-white font-bold text-2xl ml-2"> Síguenos </span>
 
           <div className="flex flex-row justify-start items-center">
-            <div>
-              <Instagram />
+            <div
+              onClick={() => window.open("https://twitter.com/CimaColombia")}
+            >
+              <Image
+                className="w-10 h-10 object-contain hover:cursor-pointer"
+                src={"/icons/instagram.svg"}
+                width={100}
+                height={100}
+                quality={100}
+                alt="Next.js logo"
+                priority
+              />
             </div>
-            <div>
-              <Linkedin />
+            <div
+              onClick={() => window.open("https://twitter.com/CimaColombia")}
+            >
+              <Image
+                className="w-10 h-10 object-contain hover:cursor-pointer"
+                src={"/icons/linkedin.svg"}
+                width={100}
+                height={100}
+                quality={100}
+                alt="Next.js logo"
+                priority
+              />
             </div>
-            <div>
-              <Twitter />
+            <div
+              onClick={() => window.open("https://twitter.com/CimaColombia")}
+            >
+              <Image
+                className="w-10 h-10 object-contain hover:cursor-pointer"
+                src={"/icons/twitter.svg"}
+                width={100}
+                height={100}
+                quality={100}
+                alt="Next.js logo"
+                priority
+              />
             </div>
           </div>
         </div>

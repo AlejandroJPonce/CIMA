@@ -43,8 +43,8 @@ export function Carrousel2({ data }: { data: profile_t[] }) {
 
   return (
     <>
-      <div className="relative flex flex-col items-center justify-center gap-20 w-full bg-(--primary-purple) py-10">
-        <div className="w-full h-100 text-center">
+      <div className="relative flex flex-col items-center justify-center w-full bg-(--primary-purple) py-10">
+        <div className="w-full text-center py-8">
           <span className="font-bold text-white md:text-5xl">
             Conoce a Nuestro Equipo
           </span>
@@ -52,7 +52,7 @@ export function Carrousel2({ data }: { data: profile_t[] }) {
 
         <div
           id="slider-section"
-          className="absolute w-full h-auto flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden gap-48 pl-23 pr-23 py-10 md:pl-42 md:pr-42"
+          className="w-full h-auto pl-20 pr-20 py-10 md:pl-42 md:pr-42 gap-43.5 flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden"
         >
           {data.map((profile: profile_t, index: number) => (
             <Profile1
@@ -60,15 +60,16 @@ export function Carrousel2({ data }: { data: profile_t[] }) {
               name={profile.name}
               role={profile.role}
               photo={profile.photo}
+              description={profile.profile_desc}
             />
           ))}
         </div>
-        <div className="w-full h-auto text-center">
+        <div className="w-full h-auto text-center py-8">
           <span className=" text-white md:text-xl">
-            <span className="text-white underline hover:cursor-pointer">
-              Conoce más
-            </span>{" "}
-            sobre nuestros roles
+            <span className="text-white hover:cursor-pointer">
+              ¡Haz click en el perfil de nuestros colaboradores y accede a su
+              información!
+            </span>
           </span>
         </div>
 

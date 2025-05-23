@@ -29,7 +29,7 @@ export default function Hero1() {
           </div>
 
           {/* description */}
-          <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-15 w-[100%] h-auto">
+          <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-8 w-[100%] h-auto">
             <div className="flex items-center justify-center">
               <button
                 type="button"
