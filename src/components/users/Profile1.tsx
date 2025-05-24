@@ -51,11 +51,11 @@ export function Profile1({
       >
         <div className="relative w-full">
           <div className="absolute flex flex-col gap-1 p-6.5">
-            <span className="text-1xl font-bold">{name}
+            <span className="text-1xl font-bold text-gray-700">{name}
               <br /> 
               <span className="text-sm text-(--primary-purple) font-normal">{role}</span>
             </span>
-            <p className="text-gray-400">
+            <p className="text-gray-500">
               {description}
             </p>
           </div>

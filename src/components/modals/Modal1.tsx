@@ -52,7 +52,7 @@ export default function Modal1({
 
   return (
     <div className="fixed top-0 left-0 bg-black/50 w-full h-screen flex items-center justify-center z-200 p-5 md:p-30">
-      <div className="bg-white w-full h-auto max-h-[650px] md:max-h-[700px] flex flex-col items-start justify-start rounded-2xl overflow-auto">
+      <div className="bg-white w-full h-auto max-h-[670px] md:max-h-[700px] flex flex-col items-start justify-start rounded-2xl overflow-auto">
         {/* Heaeder */}
         <div
           id="modal-header"
@@ -141,7 +141,7 @@ export default function Modal1({
         >
           {/* description */}
           <div className="w-full flex flex-row items-center justify-center gap-7">
-            <div className="w-full text-justify text-gray-700">
+            <div className="w-full text-justify text-gray-500">
               <p>{elements.description}</p>
             </div>
           </div>
@@ -233,7 +233,7 @@ export default function Modal1({
           {/* description footer */}
           <div className="w-full flex flex-col md:flex-row items-center justify-between gap-7 md:mt-7">
             <div className="w-full md:w-2/3 text-left">
-              <p>{elements.description}</p>
+              <p className="text-gray-500">{elements.description}</p>
             </div>
             <div className="w-full md:w-1/3 text-center">
               <button
