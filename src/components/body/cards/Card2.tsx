@@ -55,7 +55,7 @@ export default function Card2(props: elements) {
           </div>
         </div>
         <div>
-          <strong className="text-[20px]">{props.title}</strong>
+          <strong className="text-[20px] text-gray-800">{props.title}</strong>
         </div>
         <div>
           <span className="text-[14px] text-gray-500 line-clamp-5">{props.description}</span>

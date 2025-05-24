@@ -4,7 +4,7 @@ export function ContactUs() {
   return (
     <div className="w-full flex flex-col justify-center items-center py-25 gap-7">
       <div className="w-full text-center p-2">
-        <span className="font-light text-3xl md:text-4xl">
+        <span className="font-light text-3xl md:text-4xl text-gray-700">
           Contáctanos a nuestra línea directa de{" "}
           <span className="text-green-600 font-black text-5xl">WhatsApp</span>
         </span>

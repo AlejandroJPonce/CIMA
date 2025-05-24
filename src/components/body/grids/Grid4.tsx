@@ -8,8 +8,8 @@ export default function Grid4() {
       <div className="flex items-center justify-center py-10 md:p-10">
         <div className="rounded-[20px] flex flex-col gap-7 items-center justify-center">
           <div className="flex flex-col items-center justify-center text-center align-middle">
-            <strong className="text-[40px]"> Servicios </strong>
-            <p className="max-w-[400px] text-gray-400 text-[20px]">
+            <strong className="text-[40px] text-gray-800"> Servicios </strong>
+            <p className="max-w-[400px] text-gray-500 text-[20px]">
               {" "}
               Estos son los servicios de mayor relevancia a los que tendras
               acceso en nuestra App{" "}

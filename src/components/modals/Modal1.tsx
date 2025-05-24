@@ -52,7 +52,7 @@ export default function Modal1({
 
   return (
     <div className="fixed top-0 left-0 bg-black/50 w-full h-screen flex items-center justify-center z-200 p-5 md:p-30">
-      <div className="bg-white w-full h-auto max-h-[800px] md:max-h-[700px] flex flex-col items-start justify-start rounded-2xl overflow-auto">
+      <div className="bg-white w-full h-auto max-h-[650px] md:max-h-[700px] flex flex-col items-start justify-start rounded-2xl overflow-auto">
         {/* Heaeder */}
         <div
           id="modal-header"
@@ -104,7 +104,7 @@ export default function Modal1({
                 </g>
               </svg>
             </div>
-            <span className="md:text-[20px] font-medium">{elements.title}</span>
+            <span className="md:text-[20px] font-medium text-gray-800">{elements.title}</span>
           </div>
           <div
             className="w-5 h-5 hover:cursor-pointer"
@@ -141,7 +141,7 @@ export default function Modal1({
         >
           {/* description */}
           <div className="w-full flex flex-row items-center justify-center gap-7">
-            <div className="w-full text-justify">
+            <div className="w-full text-justify text-gray-700">
               <p>{elements.description}</p>
             </div>
           </div>
@@ -154,41 +154,41 @@ export default function Modal1({
                 <div
                   className="flex items-center justify-between gap-2 w-full"
                 >
-                  <span>{option.title}</span>
+                  <span className="text-gray-800">{option.title}</span>
                   <div className="w-6 h-6">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                     >
-                      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                       <g
                         id="SVGRepo_tracerCarrier"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                       ></g>
                       <g id="SVGRepo_iconCarrier">
                         {" "}
                         <path
                           d="M7 20H6C4.89543 20 4 19.1046 4 18V8H20V18C20 19.1046 19.1046 20 18 20H17"
                           stroke="#000000"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>{" "}
                         <path
                           d="M6 4H18L20 8H4L6 4Z"
                           stroke="#000000"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>{" "}
                         <path
                           d="M12 14L12 20M12 20L14.5 17.5M12 20L9.5 17.5"
                           stroke="#000000"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         ></path>{" "}
                       </g>
                     </svg>
@@ -204,25 +204,25 @@ export default function Modal1({
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
                         >
-                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
                           <g
                             id="SVGRepo_tracerCarrier"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                           ></g>
                           <g id="SVGRepo_iconCarrier">
                             {" "}
                             <path
                               d="M11 15L13.6997 12.3003V12.3003C13.8656 12.1344 13.8656 11.8656 13.6997 11.6997V11.6997L11 9"
                               stroke="#323232"
-                              stroke-width="2"
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
                             ></path>{" "}
                           </g>
                         </svg>
                       </div>
-                      <span className="font-normal text-1xl">{item.value}</span>
+                      <span className="font-normal text-1xl text-gray-700">{item.value}</span>
                     </div>
                   ))}
                 </div>
