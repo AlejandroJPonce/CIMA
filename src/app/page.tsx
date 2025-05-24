@@ -1,3 +1,5 @@
+'use client';
+
 import { Navbar1 } from "@/components/headers/Navbar1";
 import { Carrousel2 } from "@/components/body/carrousels/Carrousel2";
 import { Footer1 } from "@/components/footers/Footer1";
@@ -10,19 +12,32 @@ import Announcer from "@/components/body/announcers/Announcer";
 import Grid4 from "@/components/body/grids/Grid4";
 import { Separator1 } from "@/components/body/separator/Separator1";
 import { Separator2 } from "@/components/body/separator/Separator2";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+
+  const [innerW, setInnerW] = useState(0);
+
+  useEffect(() => {
+    setInnerW(window.innerWidth);
+  }, []);
+
   return (
     <>
       <Navbar1 />
       <Hero1 />
       <Announcer />
-      <Separator2 />
+      {innerW < 800 ? <div></div> : <Separator2 />}
+
       <Grid4 />
       <Carousel3 data={carousel_3} />
-      <Separator1 />
+
+      {innerW < 800 ? <div></div> : <Separator1 />}
+
+      <div></div>
       <Carrousel2 data={profiles} />
-      <Separator2 />
+
+      {innerW < 800 ? <div></div> : <Separator2 />}
       <ContactUs />
       <Footer1 />
     </>

@@ -29,13 +29,6 @@ export default function RootLayout({
     <html lang="es">
       <body
         className={`${jostSans.variable} ${jostMono.variable} antialiased`}
-        style={{
-          backgroundImage: "url('/backgrounds/fondo.png')",
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
       >
         {children}
       </body>
