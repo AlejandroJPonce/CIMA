@@ -97,11 +97,11 @@ export function Navbar1() {
           >
             <Image
               id="logo_id"
-              src={`${scrolling ? "/logo2.PNG" : "/logo1.PNG"}`}
+              src={`${scrolling ? "/logo2.PNG" : "/logo2.PNG"}`}
               alt="nav_Logo"
               width={100}
               height={100}
-              className={`cale-150 pt-1`}
+              className={`scale-150 pt-1`}
             />
           </a>
           {/* hamburger menu */}

@@ -9,7 +9,7 @@ export function ContactUs() {
           <span className="text-green-600 font-black text-5xl">WhatsApp</span>
         </span>
       </div>
-      <button className="flex flex-row items-center justify-center gap-3 text-white text-2xl font-bold bg-green-600 hover:bg-(--primary-orange) hover:text-white hover:cursor-pointer py-4 px-6 rounded-full transition duration-400 ease-in-out hover:scale-105">
+      <button onClick={() => window.open("https://wa.me/+573016961544")} className="flex flex-row items-center justify-center gap-3 text-white text-2xl font-bold bg-green-600 hover:bg-(--primary-orange) hover:text-white hover:cursor-pointer py-4 px-6 rounded-full transition duration-400 ease-in-out hover:scale-105">
         Contactar
         <Image
           className="w-[30px] h-[30px] rounded-full object-center object-cover"

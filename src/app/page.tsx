@@ -34,7 +34,6 @@ export default function Home() {
 
       {innerW < 800 ? <div></div> : <Separator1 />}
 
-      <div></div>
       <Carrousel2 data={profiles} />
 
       {innerW < 800 ? <div></div> : <Separator2 />}
