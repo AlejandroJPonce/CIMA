@@ -52,7 +52,7 @@ export function Carrousel2({ data }: { data: profile_t[] }) {
 
         <div
           id="slider-section"
-          className="w-full h-auto pl-20 pr-20 py-10 md:pl-42 md:pr-42 gap-43.5 flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden"
+          className="w-full h-auto pl-20 pr-20 py-10 md:pl-42 md:pr-42 gap-43.5 flex flex-row justify-start items-center overflow-x-auto overflow-y-hidden overflow-hidden"
         >
           {data.map((profile: profile_t, index: number) => (
             <Profile1
