@@ -1,12 +1,12 @@
 export function Separator2() {
   return (
     <div
-      className="w-full h-[520px] flex items-center justify-center rotate-180"
+      className="w-full h-[180px] flex items-center justify-center rotate-180"
       style={{
-        backgroundImage: "url('/footerImage.png')",
+        backgroundImage: "url('/olas_2.png')",
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "Top",
+        backgroundPosition: "center",
         backgroundClip: "content-box",
       }}
     >
